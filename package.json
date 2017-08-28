@@ -1,0 +1,25 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "A simple web app to tell the current weather conditions and forecast",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadhavBahlMD/WeatherAPP.git"
+  },
+  "author": "Madhav Bahl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MadhavBahlMD/WeatherAPP/issues"
+  },
+  "homepage": "https://github.com/MadhavBahlMD/WeatherAPP#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "hbs": "^4.0.0",
+    "request": "^2.81.0"
+  }
+}
