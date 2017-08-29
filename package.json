@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/MadhavBahlMD/WeatherAPP#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.4",
+    "express-validator": "^4.1.0",
     "hbs": "^4.0.0",
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "yargs": "^8.0.2"
   }
 }
