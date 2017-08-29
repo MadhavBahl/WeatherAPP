@@ -28,13 +28,7 @@ app.post('/', function(req, res){
       res.send(`ERROR: ${err}`);
     } else {
       var html = `<h1>LOCATION : ${results.address} </h1>`
-      weather.getWeather(results.latitude,results.longitude, (errorMessage,weatherResults) => {
-      if(errorMessage) {
-        app.send(errorMessage);
-      }  else {
-        app.send(`It's currently : ${weatherResults.temperature} deg F. It feels like ${weatherResults.apperentTemperature} deg F`);
-      }
-    });
+      res.send(html);
     }
   });
   // var html = 'Hello: ' + location + '.<br>' +
