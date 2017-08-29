@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LX - Weather APP</title>
+    <title>Weather APP</title>
     <meta name="description" content="LX - Weather APP: Just search for the
     place where you live in the search box and we shall provide you with the
     complete weather forecast and current weather consitions for that place" />
@@ -13,11 +13,9 @@
   <body>
 
     <h1> WEATHER APP </h1>
-    <form action="/resultLocation" method="post">
-      <label for="location">Location:</label>
-      <input type="text" id="location" name="location" placeholder="Enter the location" />
-       <input type="submit" value="Send message" />
-    </form>
+    <h2> LOCATION : {{location}} </h2>
+    <h2> LATITUDE : {{lat}} </h2>
+    <h2> LONGITUDE : {{lng}} </h2>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
