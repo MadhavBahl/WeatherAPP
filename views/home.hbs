@@ -7,7 +7,7 @@
     place where you live in the search box and we shall provide you with the
     complete weather forecast and current weather consitions for that place" />
     <link rel="shortcut icon" href="img/logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/main.css">
@@ -22,15 +22,21 @@
     <!-- ============ MAIN CONTENT ========== -->
 
     <div id="mainContent">
-      <h1> WEATHER APP </h1>
+      <!-- <h1> WEATHER APP </h1> -->
       <!-- <div class="searchbox" onClick="onClick(event)"> -->
-        <form action="/resultLocation"  method="post">
-          <!-- <label for="location">Location:</label> -->
+        <!-- <form action="/resultLocation"  method="post">
+          <label for="location">Location:</label>
           <input type="text" id="location"  name="location" placeholder="Enter Your Location..." required/>
           <input type="submit" onclick="showLoader()" value="Send Location" />
 
-        </form>
+        </form> -->
       <!-- </div> -->
+      <form method="post" action="/resultLocation" id="searchbox5">
+        <input id="search52" onsubmit="showLoader()" name="location" type="text" size="80" placeholder="Enter Your Location..." required/><br /><br />
+        <div class="col-sm-offset-4 col-xss-offset-1">
+          <input id="submitBtn" type="submit" onclick="showLoader()" value="Send Location" />
+        </div>
+    </form>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
