@@ -6,7 +6,7 @@ function showLoader() {
   setTimeout( function(){
     overlay.style.display = 'none';
     mainContent.style.display = 'block';
-  }, 3800);
+  }, 4800);
 }
  /* ======= Search Bar Animation ======= */
  // function ChangeColor() {
