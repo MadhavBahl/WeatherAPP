@@ -1,0 +1,9 @@
+#overlay{
+  height: 100vh;
+  background-image: url('../img/loader.gif');
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(255,231,205);
+  z-index: -4;
+}

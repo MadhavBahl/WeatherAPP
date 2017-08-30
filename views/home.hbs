@@ -8,20 +8,34 @@
     complete weather forecast and current weather consitions for that place" />
     <link rel="shortcut icon" href="img/logo.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 
-    <h1> WEATHER APP </h1>
-    <form action="/resultLocation" method="post">
-      <label for="location">Location:</label>
-      <input type="text" id="location" name="location" placeholder="Enter the location" />
-       <input type="submit" value="Send message" />
-    </form>
+    <!-- ============ LOADER INTEGRATED ============== -->
+
+    <div id="overlay">
+    </div>
+
+    <!-- ============ MAIN CONTENT ========== -->
+
+    <div id="mainContent">
+      <h1> WEATHER APP </h1>
+      <form action="/resultLocation" method="post">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter the location" />
+        <input type="submit" onclick="showLoader()" value="Send message" />
+      </form>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+    <!-- Script for loader -->
+    <script src="js/loader.js"></script>
   </body>
 </html>

@@ -8,10 +8,19 @@
     complete weather forecast and current weather consitions for that place" />
     <link rel="shortcut icon" href="img/logo.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/resultsMain.css">
   </head>
   <body>
 
+    <!-- ============ LOADER INTEGRATED ============== -->
+
+    <div id="overlay">
+    </div>
+
+    <!-- ============ MAIN CONTENT ========== -->
+
+    <div id="mainContent">
     <h1> WEATHER APP </h1>
     <h4> TODAY : {{sat}} </h4>
     <h4> LOCATION : {{location}} </h4>
@@ -31,7 +40,7 @@
     <h4> satHumidity : {{satHumidity}} </h4>
     <h4> satWindSpeed : {{satWindSpeed}} </h4>
     <h4> satPressure : {{satPressure}} </h4>
-    <h4> Tomorrow : {{sun}}, 
+    <h4> Tomorrow : {{sun}},
     <h4> sunSummary : {{sunSummary}} </h4>
     <h4> sunMaxTemp : {{sunMaxTemp}} </h4>
     <h4> sunMinTemp : {{sunMinTemp}} </h4>
@@ -51,10 +60,13 @@
     <h4> LONGITUDE : {{lng}} </h4>
     <h4> LONGITUDE : {{lng}} </h4>
     <h4> LONGITUDE : {{lng}} </h4> -->
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Include JS for LOADER -->
+    <script src="js/loader.js"></script>
   </body>
 </html>
