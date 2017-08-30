@@ -1,4 +1,10 @@
 body{
-  background-color: rgb(255,249,228);
-
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url('../img/bkg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+/* ========== search box ========== */
