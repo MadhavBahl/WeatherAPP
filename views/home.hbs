@@ -22,6 +22,14 @@
     <!-- ============ MAIN CONTENT ========== -->
 
     <div id="mainContent">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="hidden-xs" id="header">
+            WEATHER APP : Search for weather forecast for any place
+          </h1>
+
+        </div>
+      </div>
       <!-- <h1> WEATHER APP </h1> -->
       <!-- <div class="searchbox" onClick="onClick(event)"> -->
         <!-- <form action="/resultLocation"  method="post">
@@ -33,8 +41,10 @@
       <!-- </div> -->
       <form method="post" action="/resultLocation" id="searchbox5">
         <input id="search52" onsubmit="showLoader()" name="location" type="text" size="80" placeholder="Enter Your Location..." required/><br /><br />
-        <div class="col-sm-offset-4 col-xss-offset-1">
-          <input id="submitBtn" type="submit" onclick="showLoader()" value="Send Location" />
+        <div >
+          <button id="submitBtn" type="submit" onclick="showLoader()" value="Send Location">
+            Weather Forecast
+          </button>
         </div>
     </form>
 
