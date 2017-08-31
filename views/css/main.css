@@ -130,6 +130,20 @@ body{
   font-weight: bolder;
   color:#909090;
 }
+#footer-xs{
+  background-color: rgba(10,10,10,0.5);
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top: 84vh;
+  height:16vh;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-family: Arial, Helvetica, Sans-serif;
+  font-weight: bolder;
+  color:#909090;
+}
 
 #fbLink{
   color:#909090;
