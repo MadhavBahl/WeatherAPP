@@ -22,6 +22,19 @@ body{
   font-weight: bolder;
   color:#909090;
 }
+#header-xs{
+  background-color: rgba(10,10,10,0.5);
+  margin-top: 0;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font: 24px Arial, Helvetica, Sans-serif;
+  font-weight: bolder;
+  color:#909090;
+}
 
 /* ========== search box ========== */
 
@@ -99,4 +112,25 @@ body{
   background-image: -o-linear-gradient(top, #444, #445);
   background-image: linear-gradient(to bottom, #444, #445);
   text-decoration: none;
+}
+
+/* ========== CSS for footer element ========== */
+
+#footer{
+  background-color: rgba(10,10,10,0.5);
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top: 90vh;
+  height:10vh;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-family: Arial, Helvetica, Sans-serif;
+  font-weight: bolder;
+  color:#909090;
+}
+
+#fbLink{
+  color:#909090;
 }

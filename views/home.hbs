@@ -8,6 +8,7 @@
     complete weather forecast and current weather consitions for that place" />
     <link rel="shortcut icon" href="img/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="css/main.css">
@@ -27,7 +28,9 @@
           <h1 class="hidden-xs" id="header">
             WEATHER APP : Search for weather forecast for any place
           </h1>
-
+          <h1 class="visible-xs" id="header-xs">
+            Daily Weather Forecast
+          </h1>
         </div>
       </div>
       <!-- <h1> WEATHER APP </h1> -->
@@ -39,14 +42,29 @@
 
         </form> -->
       <!-- </div> -->
-      <form method="post" action="/resultLocation" id="searchbox5">
-        <input id="search52" onsubmit="showLoader()" name="location" type="text" size="80" placeholder="Enter Your Location..." required/><br /><br />
-        <div >
-          <button id="submitBtn" type="submit" onclick="showLoader()" value="Send Location">
-            Weather Forecast
-          </button>
+      <div id="mainContent">
+        <form method="post" action="/resultLocation" id="searchbox5">
+          <input id="search52" onsubmit="showLoader()" name="location" type="text" size="80" placeholder="Enter Your Location..." required/><br /><br />
+          <div >
+            <button id="submitBtn" type="submit" onclick="showLoader()" value="Send Location">
+              Weather Forecast
+            </button>
+          </div>
+        </form>
+
+
+        <div class="row">
+          <div class="col-xs-12">
+            <br> <br>
+            <h3  id="footer">
+              Designed And Developed By:
+              <a id="fbLink" href="https://www.facebook.com/MadhavBahlMD"><i class="fa fa-facebook-square"></i></a>
+               Madhav Bahl
+            </h3>
+
+          </div>
         </div>
-    </form>
+      </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
