@@ -13,7 +13,15 @@
   text-align: center;
   padding-top: 0.5%;
 }
+#headTitle h1{
+  font-size: 300%;
+}
 #lineBreak{
   /*margin-top: -4%;*/
   width: 40%;
 }
+#map {
+  display: none;
+        height: 400px;
+        width: 400px;
+       }

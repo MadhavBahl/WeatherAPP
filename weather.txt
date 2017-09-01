@@ -9,3 +9,6 @@ sleet
 snow
 wind
 fog
+API KEY -- AIzaSyAA42y4KDb3ArC_CGIGgx6uTWdjHd4GDjA
+
+AIzaSyAzuBoGMJpH1SKFLP4NAU1YP2LE2eHCOAc
