@@ -9,20 +9,22 @@ function initMap() {
   var uluru = {lat: lat, lng: lng};
   var map = new google.maps.Map(document.getElementById('map'), {
     center: uluru,
-    zoom: 15,
+    zoom: 16,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   });
-    // var marker = new google.maps.Marker({
-    //   position: uluru,
-    //   map: map
-    // });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+  });
 }
 
 function showMap(){
 
   var map = document.getElementById('map');
+  var beforMap = document.getElementById('beforeMap');
   var mapTrigger = document.getElementById('mapTrigger');
   map.style.display = 'block';
+  beforeMap.style.display = 'none';
   initMap();
   mapTrigger.style.display = 'none';
 }

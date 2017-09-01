@@ -22,7 +22,7 @@
 
     <div id="mainContent">
       <div class="row" id="headTitle">
-        <h1 id="currentWeather">Current Weather Conditions</h1>
+        <h1 id="currentWeather"><span style="font-weight: lighter;">Current</span> Weather <span style="font-weight: bolder;">Conditions</span></h1>
         <div class="col-xs-12">
           <img id="lineBreak" src="img/break.png" />
         </div>
@@ -30,15 +30,19 @@
 
       <!-- <div id="map" style="height:200px;"></div> -->
 
-      <div class="col-sm-6 col-xs-12">
-        <h4 id="lat">{{lat}}</h4>
-        <h4 id="lng">{{lng}}</h4>
-      </div>
+      <div class="row" id="currentStatus">
+        <div class="col-sm-offset-2 col-sm-4 col-xs-offset-4 col-xs-8" id="currentData">
+          <h4 id="lat">{{lat}}</h4>
+          <h4 id="lng">{{lng}}</h4>
+        </div>
 
-      <div class="col-sm-offset-1 col-sm-4 hidden-xs">
-        <div id="map"></div>
-        <a id="mapTrigger" onclick="showMap()">SHOW MAP</a>
+        <div class="col-sm-offset-1 col-sm-4 hidden-xs">
+          <div id="beforeMap">
+            <a id="mapTrigger" onclick="showMap()"><h1>SHOW MAP</h1></a>
+          </div>
+          <div id="map"></div>
 
+        </div>
       </div>
 
 
