@@ -1,0 +1,19 @@
+#mainContent{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url('../img/wind.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ========= TITLE OF THE PAGE ========= */
+#headTitle{
+  text-align: center;
+  padding-top: 0.5%;
+}
+#lineBreak{
+  /*margin-top: -4%;*/
+  width: 40%;
+}
