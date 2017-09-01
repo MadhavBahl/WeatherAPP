@@ -42,7 +42,6 @@ app.post('/resultLocation', function(req, res){
           currentIcon: weatherResults.currentIcon,
           currentTemperature: weatherResults.currentTemperature.toPrecision(4),
           currentApperentTemperature: weatherResults.currentApperentTemperature.toPrecision(4),
-          currentIcon: weatherResults.currentIcon,
           currentHumidity: weatherResults.currentHumidity,
           currentWindSpeed: weatherResults.currentWindSpeed,
           currentPressure: weatherResults.currentPressure/1000,

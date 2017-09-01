@@ -1,9 +1,13 @@
+var mainContent = document.getElementById9
 var lat = document.getElementById('lat').textContent;
 lat = Number(lat);
 var lng = document.getElementById('lng').textContent;
 lng = Number(lng);
 console.log(lat);
 console.log(lng);
+
+// var currentIcon = document.getElementById('currentIcon').textContent;
+
 
 function initMap() {
   var uluru = {lat: lat, lng: lng};

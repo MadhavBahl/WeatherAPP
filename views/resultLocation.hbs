@@ -31,9 +31,18 @@
       <!-- <div id="map" style="height:200px;"></div> -->
 
       <div class="row" id="currentStatus">
-        <div class="col-sm-offset-2 col-sm-4 col-xs-offset-4 col-xs-8" id="currentData">
+        <div class="col-sm-offset-1 col-sm-5 col-xs-12" id="currentData">
+          <h4> <b>Your Location</b>: {{location}}</h4>
+          <h4> <b>Current Weather</b>: <span id="currentIcon">{{currentIcon}}</span></h4>
+          <h4> <b>Actual Temperature</b>: {{currentTemperature}}&#8451;</h4>
+          <h4> <b>Apparent Temperature</b>: {{currentApperentTemperature}}&#8451;</h4>
+          <h4> <b>Humidity</b>: {{currentHumidity}}%</h4>
+          <h4> <b>Wind Velocity</b>: {{currentWindSpeed}} mph</h4>
+          <h4> <b>Atmospheric Pressure</b>: {{currentPressure}} atm</h4>
+          <h4> <b>Summary For This Week</b>: {{weekSummary}}</h4>
           <h4 id="lat">{{lat}}</h4>
           <h4 id="lng">{{lng}}</h4>
+          <button id="showMore">Show Daily Forecast</button>
         </div>
 
         <div class="col-sm-offset-1 col-sm-4 hidden-xs">
