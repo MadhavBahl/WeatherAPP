@@ -233,7 +233,7 @@
   width: 100%;
   height:75vh;
 }
-#sundayBKG{
+#satBKG, #sunBKG, #monBKG, #tuesBKG, #wedBKG, #thurBKG, #friBKG, #sat2BKG{
   height: 100%;
   width: auto;
 }

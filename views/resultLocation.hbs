@@ -62,7 +62,7 @@
           <!-- Modal content-->
           <div class="modal-content">
 
-            <div class="modal-body">
+            <div class="modal-body" id="modalBody">
              <div class="modal-header">
                 <button type="button" id="closeButtonX" class="close" data-dismiss="modal">X</button>
                 <h3 class="modal-title">DAILY WEATHER FORECAST</h3>
@@ -84,9 +84,10 @@
                 <div class="carousel-inner">
 
                   <div class="item active">
-                    <img id="sundayBKG" src="img/clear-day.jpg" alt="Los Angeles" style="width:100%;">
+                    <img id="satBKG" class="item-image" src="img/clear-day.jpg" alt="Los Angeles" style="width:100%;">
                     <div class="carousel-caption">
                       <h3><b>TODAY:</b> {{sat}}</h3>
+                      <h3><b>FORECAST:</b> <span id="satIcon">{{satIcon}}</span></h3>
                       <p><b>Weather Summary:</b> {{satSummary}}</p>
                       <p><b>Maximum Temperature:</b> {{satMaxTemp}}&#8451;</p>
                       <p><b>Minimum Temperature:</b> {{satMinTemp}}&#8451;</p>
@@ -97,9 +98,10 @@
                   </div>
 
                   <div class="item">
-                    <img id="sundayBKG" src="img/cloudy.jpg" alt="Chicago" style="width:100%;">
-                    <div class="carousel-caption">
+                    <img id="sunBKG" src="img/cloudy.jpg" alt="Chicago" style="width:100%;">
+                    <div id="sat" class="carousel-caption">
                       <h3><b>TOMORROW:</b> {{sun}}</h3>
+                      <h3><b>Forecast:</b> <span id="sunIcon">{{sunIcon}}</span></h3>
                       <p><b>Weather Summary:</b> {{sunSummary}}</p>
                       <p><b>Maximum Temperature:</b> {{sunMaxTemp}}&#8451;</p>
                       <p><b>Minimum Temperature:</b> {{sunMinTemp}}&#8451;</p>
@@ -110,9 +112,10 @@
                   </div>
 
                   <div class="item">
-                    <img id="sundayBKG" src="img/clear-day.jpg" alt="New York" style="width:100%;">
-                    <div class="carousel-caption">
+                    <img id="monBKG" src="img/clear-day.jpg" style="width:100%;">
+                    <div id="mon" class="carousel-caption">
                       <h3><b>DAY:</b> {{mon}}</h3>
+                      <h3><b>FORECAST:</b> <span id="monIcon">{{monIcon}}</span></h3>
                       <p><b>Weather Summary:</b> {{monSummary}}</p>
                       <p><b>Maximum Temperature:</b> {{monMaxTemp}}&#8451;</p>
                       <p><b>Minimum Temperature:</b> {{monMinTemp}}&#8451;</p>
@@ -123,9 +126,10 @@
                   </div>
 
                   <div class="item">
-                    <img id="sundayBKG" src="img/cloudy.jpg" alt="Chicago" style="width:100%;">
-                    <div class="carousel-caption">
+                    <img id="tuesBKG" src="img/cloudy.jpg" alt="Chicago" style="width:100%;">
+                    <div id="tues" class="carousel-caption">
                       <h3><b>DAY:</b> {{tues}}</h3>
+                      <h3><b>FORECAST:</b> <span id="tuesIcon">{{tuesIcon}}</span></h3>
                       <p><b>Weather Summary:</b> {{tuesSummary}}</p>
                       <p><b>Maximum Temperature:</b> {{tuesMaxTemp}}&#8451;</p>
                       <p><b>Minimum Temperature:</b> {{tuesMinTemp}}&#8451;</p>
@@ -136,9 +140,10 @@
                   </div>
 
                   <div class="item">
-                    <img id="sundayBKG" src="img/cloudy.jpg" alt="Chicago" style="width:100%;">
-                    <div class="carousel-caption">
+                    <img id="wedBKG" src="img/cloudy.jpg" alt="Chicago" style="width:100%;">
+                    <div id="wed" class="carousel-caption">
                       <h3><b>DAY:</b> {{wed}}</h3>
+                      <h3><b>FORECAST:</b> <span id="wedIcon">{{wedIcon}}</span></h3>
                       <p><b>Weather Summary:</b> {{wedSummary}}</p>
                       <p><b>Maximum Temperature:</b> {{wedMaxTemp}}&#8451;</p>
                       <p><b>Minimum Temperature:</b> {{wedMinTemp}}&#8451;</p>
@@ -149,9 +154,10 @@
                   </div>
 
                   <div class="item">
-                    <img id="sundayBKG" src="img/cloudy.jpg" alt="Chicago" style="width:100%;">
-                    <div class="carousel-caption">
+                    <img id="thurBKG" src="img/cloudy.jpg" alt="Chicago" style="width:100%;">
+                    <div id="thur" class="carousel-caption">
                       <h3><b>DAY:</b> {{thur}}</h3>
+                      <h3><b>FORECAST:</b> <span id="thurIcon">{{thurIcon}}</span></h3>
                       <p><b>Weather Summary:</b> {{thurSummary}}</p>
                       <p><b>Maximum Temperature:</b> {{thurMaxTemp}}&#8451;</p>
                       <p><b>Minimum Temperature:</b> {{thurMinTemp}}&#8451;</p>
@@ -162,9 +168,10 @@
                   </div>
 
                   <div class="item">
-                    <img id="sundayBKG" src="img/cloudy.jpg" alt="Chicago" style="width:100%;">
-                    <div class="carousel-caption">
+                    <img id="friBKG" src="img/cloudy.jpg" alt="Chicago" style="width:100%;">
+                    <div id="fri" class="carousel-caption">
                       <h3><b>DAY:</b> {{fri}}</h3>
+                      <h3><b>FORECAST:</b> <span id="friIcon">{{friIcon}}</span></h3>
                       <p><b>Weather Summary:</b> {{friSummary}}</p>
                       <p><b>Maximum Temperature:</b> {{friMaxTemp}}&#8451;</p>
                       <p><b>Minimum Temperature:</b> {{friMinTemp}}&#8451;</p>
@@ -175,9 +182,10 @@
                   </div>
 
                   <div class="item">
-                    <img id="sundayBKG" src="img/cloudy.jpg" alt="Chicago" style="width:100%;">
-                    <div class="carousel-caption">
+                    <img id="sat2BKG" src="img/cloudy.jpg" alt="Chicago" style="width:100%;">
+                    <div id="sat2" class="carousel-caption">
                       <h3><b>DAY:</b> {{sat2}}</h3>
+                      <h3><b>FORECAST:</b> <span id="sat2Icon">{{sat2Icon}}</span></h3>
                       <p><b>Weather Summary:</b> {{sat2Summary}}</p>
                       <p><b>Maximum Temperature:</b> {{sat2MaxTemp}}&#8451;</p>
                       <p><b>Minimum Temperature:</b> {{sat2MinTemp}}&#8451;</p>
