@@ -239,6 +239,11 @@
 }
 .modal-header{
   height: 10vh;
+  color: #9F9F9F;
+}
+.modal-header h3 {
+  font-size: 2.5vw;
+
 }
 .modal-footer{
   height: 15vh;

@@ -118,42 +118,25 @@ if(currentIcon === 'rain'){
 
 function correctBKG(icon,bkg,day) {
   bkg.src = `../img/` + `${icon}` + '.jpg';
-  // if(icon === 'rain'){
-  //   mainContent.style.backgroundImage = "url('../img/rain.jpg')";
-  //   currentWeather.style.color = '#C7C7C7';
-  //   lineBreak.src = '../img/break2.png';
-  //   currentData.style.color = '#C0C0C0';
-  // } else if(icon === 'clear-day'){
-  //   mainContent.style.backgroundImage = "url('../img/clear-day.jpg')";
-  // } else if(icon === 'clear-night'){
-  //   mainContent.style.backgroundImage = "url('../img/clear-night.jpg')";
-  //   currentWeather.style.color = '#C7C7C7';
-  //   lineBreak.src = '../img/break2.png';
-  //   currentData.style.color = '#C0C0C0';
-  // } else if(icon === 'partly-cloudy-night'){
-  //   mainContent.style.backgroundImage = "url('../img/partly-cloudy-night.jpg')";
-  //   currentWeather.style.color = '#C7C7C7';
-  //   lineBreak.src = '../img/break2.png';
-  //   currentData.style.color = '#C0C0C0';
-  // } else if(icon === 'partly-cloudy-day'){
-  //   mainContent.style.backgroundImage = "url('../img/partly-cloudy-day.jpg')";
-  // } else if(icon === 'cloudy'){
-  //   mainContent.style.backgroundImage = "url('../img/cloudy.jpg')";
-  //   currentWeather.style.color = '#C7C7C7';
-  //   lineBreak.src = '../img/break2.png';
-  //   currentData.style.color = '#C0C0C0';
-  // } else if(icon === 'fog'){
-  //   mainContent.style.backgroundImage = "url('../img/fog.jpg')";
-  // } else if(icon === 'sleet'){
-  //   mainContent.style.backgroundImage = "url('../img/sleet.jpg')";
-  //   currentWeather.style.color = '#C7C7C7';
-  //   lineBreak.src = '../img/break2.png';
-  //   currentData.style.color = '#C0C0C0';
-  // } else if(icon === 'snow'){
-  //   mainContent.style.backgroundImage = "url('../img/snow.jpg')";
-  // } else if(icon === 'wind'){
-  //   mainContent.style.backgroundImage = "url('../img/wind.jpg')";
-  // }
+  if(icon === 'rain'){
+    day.style.color = '#D7D7D7';
+  } else if(icon === 'clear-day'){
+    day.style.color = '#131313';
+  } else if(icon === 'clear-night'){
+    day.style.color = '#D7D7D7';
+  } else if(icon === 'partly-cloudy-night'){
+    day.style.color = '#D7D7D7';
+  } else if(icon === 'partly-cloudy-day'){
+    day.style.color = '#131313';
+  } else if(icon === 'cloudy'){
+    day.style.color = '#D7D7D7';
+  } else if(icon === 'fog'){
+    day.style.color = '#131313';
+  } else if(icon === 'sleet'){
+    day.style.color = '#D7D7D7';
+  } else if(icon === 'snow'){
+    day.style.color = '#131313';
+  }
 
 }
 

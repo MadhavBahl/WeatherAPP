@@ -63,7 +63,7 @@
           <div class="modal-content">
 
             <div class="modal-body" id="modalBody">
-             <div class="modal-header">
+             <div class="modal-header hidden-xs">
                 <button type="button" id="closeButtonX" class="close" data-dismiss="modal">X</button>
                 <h3 class="modal-title">DAILY WEATHER FORECAST</h3>
               </div>
@@ -85,7 +85,8 @@
 
                   <div class="item active">
                     <img id="satBKG" class="item-image" src="img/clear-day.jpg" alt="Los Angeles" style="width:100%;">
-                    <div class="carousel-caption">
+                    <div id="sat" class="carousel-caption">
+                      <h3 class="modal-title visible-xs" style="color: #9F9F9F;">DAILY WEATHER FORECAST</h3>
                       <h3><b>TODAY:</b> {{sat}}</h3>
                       <h3><b>FORECAST:</b> <span id="satIcon">{{satIcon}}</span></h3>
                       <p><b>Weather Summary:</b> {{satSummary}}</p>
@@ -99,7 +100,8 @@
 
                   <div class="item">
                     <img id="sunBKG" src="img/cloudy.jpg" alt="Chicago" style="width:100%;">
-                    <div id="sat" class="carousel-caption">
+                    <div id="sun" class="carousel-caption">
+                      <h3 class="modal-title visible-xs" style="color: #9F9F9F;">DAILY WEATHER FORECAST</h3>
                       <h3><b>TOMORROW:</b> {{sun}}</h3>
                       <h3><b>Forecast:</b> <span id="sunIcon">{{sunIcon}}</span></h3>
                       <p><b>Weather Summary:</b> {{sunSummary}}</p>
@@ -114,6 +116,7 @@
                   <div class="item">
                     <img id="monBKG" src="img/clear-day.jpg" style="width:100%;">
                     <div id="mon" class="carousel-caption">
+                      <h3 class="modal-title visible-xs" style="color: #9F9F9F;">DAILY WEATHER FORECAST</h3>
                       <h3><b>DAY:</b> {{mon}}</h3>
                       <h3><b>FORECAST:</b> <span id="monIcon">{{monIcon}}</span></h3>
                       <p><b>Weather Summary:</b> {{monSummary}}</p>
@@ -128,6 +131,7 @@
                   <div class="item">
                     <img id="tuesBKG" src="img/cloudy.jpg" alt="Chicago" style="width:100%;">
                     <div id="tues" class="carousel-caption">
+                      <h3 class="modal-title visible-xs" style="color: #9F9F9F;">DAILY WEATHER FORECAST</h3>
                       <h3><b>DAY:</b> {{tues}}</h3>
                       <h3><b>FORECAST:</b> <span id="tuesIcon">{{tuesIcon}}</span></h3>
                       <p><b>Weather Summary:</b> {{tuesSummary}}</p>
@@ -142,6 +146,7 @@
                   <div class="item">
                     <img id="wedBKG" src="img/cloudy.jpg" alt="Chicago" style="width:100%;">
                     <div id="wed" class="carousel-caption">
+                      <h3 class="modal-title visible-xs" style="color: #9F9F9F;">DAILY WEATHER FORECAST</h3>
                       <h3><b>DAY:</b> {{wed}}</h3>
                       <h3><b>FORECAST:</b> <span id="wedIcon">{{wedIcon}}</span></h3>
                       <p><b>Weather Summary:</b> {{wedSummary}}</p>
@@ -156,6 +161,7 @@
                   <div class="item">
                     <img id="thurBKG" src="img/cloudy.jpg" alt="Chicago" style="width:100%;">
                     <div id="thur" class="carousel-caption">
+                      <h3 class="modal-title visible-xs" style="color: #9F9F9F;">DAILY WEATHER FORECAST</h3>
                       <h3><b>DAY:</b> {{thur}}</h3>
                       <h3><b>FORECAST:</b> <span id="thurIcon">{{thurIcon}}</span></h3>
                       <p><b>Weather Summary:</b> {{thurSummary}}</p>
@@ -170,6 +176,7 @@
                   <div class="item">
                     <img id="friBKG" src="img/cloudy.jpg" alt="Chicago" style="width:100%;">
                     <div id="fri" class="carousel-caption">
+                      <h3 class="modal-title visible-xs" style="color: #9F9F9F;">DAILY WEATHER FORECAST</h3>
                       <h3><b>DAY:</b> {{fri}}</h3>
                       <h3><b>FORECAST:</b> <span id="friIcon">{{friIcon}}</span></h3>
                       <p><b>Weather Summary:</b> {{friSummary}}</p>
@@ -184,6 +191,7 @@
                   <div class="item">
                     <img id="sat2BKG" src="img/cloudy.jpg" alt="Chicago" style="width:100%;">
                     <div id="sat2" class="carousel-caption">
+                      <h3 class="modal-title visible-xs" style="color: #9F9F9F;">DAILY WEATHER FORECAST</h3>
                       <h3><b>DAY:</b> {{sat2}}</h3>
                       <h3><b>FORECAST:</b> <span id="sat2Icon">{{sat2Icon}}</span></h3>
                       <p><b>Weather Summary:</b> {{sat2Summary}}</p>
