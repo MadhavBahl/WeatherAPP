@@ -69,7 +69,7 @@ function showMap(){
   var map = document.getElementById('map');
   var beforMap = document.getElementById('beforeMap');
   var mapTrigger = document.getElementById('mapTrigger');
-  map.style.display = 'block';
+  map.style.display = 'flex';
   beforeMap.style.display = 'none';
   initMap();
   mapTrigger.style.display = 'none';
