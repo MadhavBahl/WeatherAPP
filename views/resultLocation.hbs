@@ -42,7 +42,7 @@
           <h4> <b>Summary For This Week</b>: {{weekSummary}}</h4>
           <h4 id="lat">{{lat}}</h4>
           <h4 id="lng">{{lng}}</h4>
-          <button id="showMore">Show Daily Forecast</button>
+          <button id="showMore" data-toggle="modal" data-target="#myModal">Show Daily Forecast</button>
         </div>
 
         <div class="col-sm-offset-1 col-sm-4 col-xs-12">
@@ -54,7 +54,30 @@
         </div>
       </div>
 
+      <!-- Modal -->
 
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+
+            <div class="modal-body">
+             <div class="modal-header">
+                <button type="button" id="closeButton" class="close" data-dismiss="modal">X</button>
+                <h2 class="modal-title">DAILY WEATHER FORECAST</h2>
+              </div>
+              <h3>WE ARE CURRENTLY WORKING ON THE DAILY FORECAST.</h3>
+              <p>Thanks.</p>
+              <div class="modal-footer">
+                <button type="button" id="closeButton" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
 
 
       <!-- <h1> WEATHER APP </h1>
