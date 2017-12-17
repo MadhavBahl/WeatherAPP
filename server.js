@@ -7,7 +7,7 @@ const fs = require('fs');
 const geocode = require('./geocode/geocode.js');
 const weather = require('./weather/weather.js');
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 
 var app = express();
 app.use(bodyParser());
