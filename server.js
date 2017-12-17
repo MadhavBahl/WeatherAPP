@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const yargs = require('yargs');
 const hbs = require('hbs');
-const fs =require('fs');
+const fs = require('fs');
 
 const geocode = require('./geocode/geocode.js');
 const weather = require('./weather/weather.js');
